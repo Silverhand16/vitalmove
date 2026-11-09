@@ -1,0 +1,604 @@
+.navbar-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(246, 247, 242, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 14px 0;
+}
+
+.nav-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  .brand-title {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    color: var(--text-dark);
+  }
+  .brand-subtitle {
+    font-size: 0.58rem;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+    color: var(--text-muted);
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 0.82rem;
+    font-weight: 500;
+    &:hover { color: var(--primary-dark); }
+  }
+}
+
+.hero-layout, .split-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+  &.reverse {
+    grid-template-columns: 1fr 1fr;
+    .info-content { order: 1; }
+    .arch-card {
+  width: 100%;
+  height: 480px;
+  border-radius: var(--radius-arch);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* Alinea el encuadre desde arriba */
+  }
+}
+  }
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.arch-card {
+  width: 100%;
+  height: 480px;
+  border-radius: var(--radius-arch);
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 16px;
+
+  h4 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+.mini-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.mini-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  h4 {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+  p {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+}
+
+.header-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.cards-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  .img-wrapper {
+    height: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    img { width: 100%; height: 100%; object-fit: cover; }
+  }
+  .badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+  h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+}
+
+.btn-full { width: 100%; }
+
+.accordion-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.accordion-card {
+  cursor: pointer;
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+    .arrow {
+      transition: transform 0.2s ease;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      &.open { transform: rotate(90deg); }
+    }
+  }
+  .badge-sub {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+  }
+  .accordion-body {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-color);
+    p { font-size: 0.85rem; white-space: pre-line; }
+    ul {
+      list-style: none;
+      li {
+        font-size: 0.83rem;
+        color: var(--text-muted);
+        margin-bottom: 8px;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    .label {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    strong { font-size: 0.95rem; }
+  }
+}
+
+.schedule-card {
+  .schedule-table {
+    margin: 20px 0;
+    .row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border-color);
+      font-size: 0.88rem;
+    }
+  }
+  .schedule-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .address-box {
+    background: var(--bg-main);
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+}
+
+.form-card {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px;
+  .cita-form {
+    margin-top: 24px;
+  }
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+  label {
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+  input, select, textarea {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-main);
+    font-family: inherit;
+    font-size: 0.88rem;
+    outline: none;
+    &:focus { border-color: var(--primary-green); }
+  }
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+  .privacy-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+}
+
+.objetivos-container {
+  background: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 36px 40px;
+  border: 1px solid var(--border-color);
+  margin-top: 32px;
+}
+
+.objetivos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+
+  h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+
+  .badge-sub {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+}
+
+.objetivos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+}
+
+.objetivo-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f8faf6;
+  padding: 14px 20px;
+  border-radius: 9999px;
+  border: 1px solid var(--border-color);
+
+  .num-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    flex-shrink: 0;
+  }
+
+  p {
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+}
+
+/* Logo en Navbar */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .brand-logo {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Badge flotante del Logo en Hero */
+.logo-card-badge {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 12px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-color);
+  margin-bottom: 24px;
+  max-width: 140px;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.modal-backdrop {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: rgba(0, 0, 0, 0.55) !important;
+  backdrop-filter: blur(4px);
+  z-index: 99999 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  padding: 40px 20px !important;
+  overflow-y: auto !important; // El scrollbar queda en la pantalla entera, no en la card
+}
+
+.modal-content {
+  position: relative !important;
+  background: #ffffff !important;
+  border-radius: 24px !important;
+  padding: 32px 40px !important;
+  max-width: 680px !important;
+  width: 100% !important;
+  max-height: none !important; // Quita el límite de altura
+  overflow: visible !important;  // Elimina la barra de scroll interna
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2) !important;
+  margin: auto 0 !important;
+
+  .modal-title {
+    font-size: 1.8rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .section-desc {
+    font-size: 0.85rem !important;
+    margin-bottom: 16px !important;
+  }
+
+  .form-group {
+    margin-bottom: 12px !important;
+    
+    input, select, textarea {
+      padding: 10px 14px !important;
+    }
+  }
+
+  textarea {
+    rows: 2 !important;
+    height: 70px !important;
+  }
+}
+
+
+/* ==========================================
+   MEDIA QUERIES (RESPONSIVE DESIGN)
+   ========================================== */
+
+/* Tablets y pantallas medianas (<= 992px) */
+@media (max-width: 992px) {
+  .hero-layout, 
+  .split-layout {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    
+    &.reverse {
+      .info-content { order: 2; }
+      .arch-card { order: 1; }
+    }
+  }
+
+  .header-split {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .cards-grid-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .cards-grid-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .arch-card {
+    height: 380px !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Móviles (<= 768px) */
+@media (max-width: 768px) {
+  .section-container {
+    padding: 48px 16px !important;
+  }
+
+  /* Navbar móvil */
+  .navbar-header {
+    padding: 10px 0 !important;
+  }
+
+  .nav-container {
+    padding: 0 16px !important;
+  }
+
+  .nav-links {
+    display: none !important; /* Oculta el menú horizontal en móviles */
+  }
+
+  .brand .brand-title {
+    font-size: 1.15rem !important;
+  }
+
+  .heading-display {
+    font-size: 2rem !important;
+  }
+
+  /* Grids en 1 sola columna */
+  .cards-grid-3,
+  .cards-grid-4,
+  .accordion-grid,
+  .objetivos-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .mini-cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .objetivos-container {
+    padding: 24px 20px !important;
+  }
+
+  .objetivo-item {
+    border-radius: 16px !important; /* Pasa de cápsula a bordes suaves en pantallas estrechas */
+  }
+
+  /* Botones del Hero */
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    
+    .btn {
+      width: 100%;
+    }
+  }
+
+  /* Modal en dispositivos móviles */
+  .modal-backdrop {
+    padding: 12px !important;
+  }
+
+  .modal-content {
+    padding: 24px 18px !important;
+    border-radius: 18px !important;
+
+    .modal-title {
+      font-size: 1.4rem !important;
+    }
+
+    .form-row {
+      grid-template-columns: 1fr !important; /* Los inputs del formulario pasan a 1 sola columna */
+      gap: 0 !important;
+    }
+
+    .form-footer {
+      flex-direction: column;
+      align-items: stretch;
+      
+      .btn {
+        width: 100%;
+      }
+
+      .privacy-note {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,371 @@
+<!-- Navbar -->
+<header class="navbar-header">
+  <div class="nav-container">
+   <div class="brand">
+  <img src="assets/images/logo-vitalmove.jpeg" alt="VitalMove Logo" class="brand-logo" />
+  <div class="brand-text">
+    <span class="brand-title">Vida y Movimiento</span>
+    <span class="brand-subtitle">TERAPIA FÍSICA Y OCUPACIONAL</span>
+  </div>
+</div>
+    <nav class="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#terapias">Terapias</a>
+      <a href="#valores">Valores</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+   <!-- Reemplaza el enlace por este botón en el Navbar -->
+<button type="button" (click)="abrirModal()" class="btn btn-primary nav-cta">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <rect x="2" y="4" width="20" height="16" rx="2"/>
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+  </svg>
+  Escríbenos
+</button>
+  </div>
+</header>
+
+<main class="main-content">
+  <!-- Hero Section -->
+  <section id="inicio" class="section-container hero-layout">
+    <div class="hero-info">
+  <!-- Badge flotante con el Logo -->
+  <div class="logo-card-badge">
+    <img src="assets/images/logo-vitalmove.jpeg" alt="VitalMove" />
+  </div>
+
+  <div class="subtitle-badge">
+    <span class="line"></span>
+    <span class="text">TERAPIAS Y REHABILITACIÓN</span>
+  </div>
+  ...
+      <h1 class="heading-display">Cuidamos tu salud con atención cercana.</h1>
+      <p class="section-desc">
+        En nuestra clínica creemos que cada persona merece la oportunidad de alcanzar su máximo potencial y mejorar su calidad de vida. Somos un espacio dedicado a la rehabilitación integral, donde brindamos servicios de Terapia Física y Terapia Ocupacional enfocados en las necesidades individuales de cada paciente.
+      </p>
+      <div class="hero-actions">
+        <a href="mailto:mximenaponcet@gmail.com" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Escríbenos por correo
+        </a>
+        <a href="tel:59185697" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Llamar ahora
+        </a>
+        <a href="https://wa.me/50258195697" target="_blank" class="btn btn-whatsapp">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="arch-card">
+        <img src="assets/images/hero.jpg" alt="Paciente en rehabilitación" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Mí -->
+  <section id="sobre-mi" class="section-container split-layout">
+    <div class="arch-card shadow-lg">
+      <img src="assets/images/sobre-mi.jpg" alt="FT. Ximena Ponce" />
+    </div>
+    <div class="info-content">
+      <div class="subtitle-badge">
+        <span class="line"></span>
+        <span class="text">Sobre mí</span>
+      </div>
+      <h2 class="heading-display">Hola, soy Marilyn Ximena Ponce Tobías.</h2>
+      <p class="section-desc">
+        Tengo 21 años, soy egresada de la Universidad Rafael Landívar y soy la terapeuta detrás de VitalMove. Me formé con el objetivo de acompañar a cada persona en sus procesos de rehabilitación física y ocupacional, convencida de que el movimiento y el cuidado adecuado son clave para recuperar el bienestar.
+      </p>
+      <p class="section-desc">
+        En cada sesión combino técnicas seguras y actualizadas con un trato humano y cercano, para que te sientas escuchado y motivado durante todo tu proceso.
+      </p>
+      <div class="mini-cards-grid">
+        <div class="mini-card">
+          <h4>Formación profesional</h4>
+          <p>Mi formación en terapia física y ocupacional respalda cada uno de los tratamientos que brindo.</p>
+        </div>
+        <div class="mini-card">
+          <h4>Atención personalizada</h4>
+          <p>Adapto cada tratamiento a tus necesidades, objetivos y capacidades.</p>
+        </div>
+        <div class="mini-card">
+          <h4>Acompañamiento continuo</h4>
+          <p>Hago seguimiento de tu progreso a lo largo de todo el proceso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nuestra Historia -->
+  <section id="nosotros" class="section-container split-layout reverse">
+    <div class="info-content">
+      <div class="subtitle-badge">
+        <span class="line"></span>
+        <span class="text">Nuestra Historia</span>
+      </div>
+      <h2 class="heading-display">Un espacio tranquilo para recuperar tu bienestar.</h2>
+      <p class="section-desc">
+        En VitalMove unimos la fisioterapia y la terapia ocupacional para acompañar a cada persona en su proceso de recuperación. Nuestra razón de ser es brindar una atención cálida, profesional y personalizada, donde el bienestar del paciente siempre está en el centro.
+      </p>
+      <div class="card box-card">
+        <h4>Misión</h4>
+        <p>Brindar atención integral y personalizada en terapia física y ocupacional, promoviendo la rehabilitación, la independencia funcional y el bienestar de cada persona mediante intervenciones profesionales, humanas y basadas en sus necesidades individuales.</p>
+      </div>
+      <div class="card box-card">
+        <h4>Visión</h4>
+        <p>Ser un centro de terapias reconocido por la calidad de su atención y por el impacto positivo en la vida de los pacientes, siendo un referente en rehabilitación física y ocupacional que inspire confianza y contribuya a una comunidad más saludable.</p>
+      </div>
+    </div>
+    <div class="arch-card">
+      <img src="assets/images/historia.jpg" alt="Instalaciones VitalMove" />
+    </div>
+  </section>
+
+  <!-- Terapias Grid -->
+  <section id="terapias" class="section-container">
+    <div class="header-split">
+      <h2 class="heading-display">Tratamientos pensados para tu recuperación y equilibrio.</h2>
+      <p class="section-desc">
+        Cada plan se adapta a ti: evaluamos tu caso y combinamos técnicas seguras con un acompañamiento constante durante todo el proceso.
+      </p>
+    </div>
+
+    <div class="cards-grid-3">
+      <article class="card main-card">
+        <div class="img-wrapper">
+          <img src="assets/images/terapia-fisica.jpg" alt="Terapia Física" />
+        </div>
+        <span class="badge">FÍSICA</span>
+        <h3>Terapia Física</h3>
+        <p>Se enfoca en prevenir, tratar y rehabilitar lesiones o alteraciones del movimiento mediante ejercicios terapéuticos y técnicas especializadas, con el objetivo de mejorar la movilidad, fuerza, equilibrio y funcionalidad del paciente.</p>
+        <button class="btn btn-outline btn-full">Solicitar información</button>
+      </article>
+
+      <article class="card main-card">
+        <div class="img-wrapper">
+          <img src="assets/images/terapia-ocupacional.jpg" alt="Terapia Ocupacional" />
+        </div>
+        <span class="badge">OCUPACIONAL</span>
+        <h3>Terapia Ocupacional</h3>
+        <p>Busca promover la independencia y autonomía de las personas en sus actividades cotidianas. Trabaja habilidades motoras, cognitivas, sensoriales y sociales para facilitar la participación en el hogar, trabajo, estudio y comunidad.</p>
+        <button class="btn btn-outline btn-full">Solicitar información</button>
+      </article>
+
+      <article class="card main-card">
+        <div class="img-wrapper">
+          <img src="assets/images/terapia-deportiva.jpg" alt="Rehabilitación Deportiva" />
+        </div>
+        <span class="badge">RENDIMIENTO</span>
+        <h3>Rehabilitación Deportiva</h3>
+        <p>Está dirigida a deportistas y personas físicamente activas que presentan lesiones o buscan recuperar su rendimiento físico. Incluye ejercicios específicos y técnicas de rehabilitación para facilitar un retorno seguro a la actividad deportiva.</p>
+        <button class="btn btn-outline btn-full">Solicitar información</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sección de Valores y Objetivos -->
+  <section id="valores" class="section-container">
+    <div class="header-split">
+      <h2 class="heading-display">Lo que guía nuestro trabajo cada día.</h2>
+      <p class="section-desc">
+        Nuestros valores definen la forma en que tratamos a cada paciente, y nuestros objetivos marcan el rumbo que seguimos como centro de terapias.
+      </p>
+    </div>
+
+    <!-- Grid de 4 Valores -->
+    <div class="cards-grid-4">
+      <article class="card valor-card" *ngFor="let val of valores">
+        <div class="icon-bubble">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </div>
+        <h4>{{ val.titulo }}</h4>
+        <p>{{ val.descripcion }}</p>
+      </article>
+    </div>
+
+    <!-- Subsección Objetivos -->
+    <div class="card objetivos-container">
+      <div class="objetivos-header">
+        <h3>Nuestros objetivos</h3>
+        <span class="badge-sub">HACIA DÓNDE VAMOS</span>
+      </div>
+      <div class="objetivos-grid">
+        <div class="objetivo-item" *ngFor="let obj of objetivos">
+          <span class="num-badge">{{ obj.numero }}</span>
+          <p>{{ obj.texto }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ / Aprende con nosotros -->
+  <section class="section-container">
+    <div class="header-split">
+      <div>
+        <div class="subtitle-badge">
+          <span class="line"></span>
+          <span class="text">Aprende con nosotros</span>
+        </div>
+        <h2 class="heading-display">¿Qué es la fisioterapia y cómo puede ayudarte?</h2>
+      </div>
+      <p class="section-desc">
+        Compartimos temas de interés para que conozcas mejor el trabajo de la terapia física y ocupacional. Explora cada tema para entender cómo acompañamos tu recuperación.
+      </p>
+    </div>
+
+    <div class="accordion-grid">
+      <div class="card accordion-card" *ngFor="let item of faqs" (click)="toggleItem(item)">
+        <div class="accordion-header">
+          <h3>{{ item.titulo }}</h3>
+          <span class="arrow" [class.open]="item.abierto">❯</span>
+        </div>
+        <div class="accordion-body" *ngIf="item.abierto">
+          <p>{{ item.contenido }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recursos -->
+  <section id="recursos" class="section-container">
+    <div class="header-split">
+      <h2 class="heading-display">Material para entender cada terapia.</h2>
+      <p class="section-desc">
+        Reunimos documentos con teoría sobre los servicios más comunes de la clínica. Abre cada uno para leer su contenido.
+      </p>
+    </div>
+
+    <div class="accordion-grid">
+      <div class="card accordion-card" *ngFor="let rec of recursos" (click)="toggleItem(rec)">
+        <div class="accordion-header">
+          <div>
+            <span class="badge-sub">{{ rec.subtitulo }}</span>
+            <h3>{{ rec.titulo }}</h3>
+          </div>
+          <span class="arrow" [class.open]="rec.abierto">❯</span>
+        </div>
+        <div class="accordion-body" *ngIf="rec.abierto">
+          <ul>
+            <li *ngFor="let pt of rec.puntos">{{ pt }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto & Horarios -->
+  <section id="contacto" class="section-container split-layout">
+    <div class="info-content">
+      <div class="subtitle-badge">
+        <span class="line"></span>
+        <span class="text">Contacto</span>
+      </div>
+      <h2 class="heading-display">Agenda tu primera cita</h2>
+      <p class="section-desc">Escríbenos por correo o llámanos directamente. También puedes dejar tus datos en el formulario y coordinamos tu primera cita contigo.</p>
+      
+      <div class="contact-methods">
+        <div class="card contact-item">
+          <span class="label">CORREO ELECTRÓNICO</span>
+          <strong>mximenaponcet@gmail.com</strong>
+        </div>
+        <div class="card contact-item">
+          <span class="label">TELÉFONO</span>
+          <strong>5918-5697</strong>
+        </div>
+        <div class="card contact-item">
+          <span class="label">WHATSAPP</span>
+          <strong>5819-5697</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="card schedule-card">
+      <div class="subtitle-badge">
+        <span class="text">HORARIO DE ATENCIÓN</span>
+      </div>
+      <div class="schedule-table">
+        <div class="row"><span>Lunes a viernes</span><strong>7:00 - 15:00</strong></div>
+        <div class="row"><span>Sábado</span><strong>8:00 - 14:00</strong></div>
+        <div class="row"><span>Domingo</span><strong>Cerrado</strong></div>
+      </div>
+      <div class="schedule-actions">
+        <a href="mailto:mximenaponcet@gmail.com" class="btn btn-outline btn-full">Enviar un correo</a>
+        <a href="tel:59185697" class="btn btn-outline btn-full">Llamar al centro</a>
+        <a href="https://wa.me/50258195697" target="_blank" class="btn btn-whatsapp btn-full">Escribir por WhatsApp</a>
+      </div>
+      <div class="address-box">
+        <p><strong>Dirección:</strong> 6ta Avenida Sur #21, Sacatepéquez, La Antigua Guatemala.</p>
+        <p>Contamos con estacionamiento para pacientes.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="modal-backdrop" *ngIf="mostrarModal" (click)="cerrarModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button type="button" class="btn-close" (click)="cerrarModal()">✕</button>
+    
+    <div class="subtitle-badge">
+      <span class="line"></span>
+      <span class="text">SOLICITA TU CITA</span>
+    </div>
+    <h2 class="heading-display modal-title">Completa el formulario y coordinamos tu cita.</h2>
+    <p class="section-desc">Déjanos tus datos y tu preferencia de horario. Te contactaremos para confirmar la cita.</p>
+
+    <form (ngSubmit)="onSubmit()" class="cita-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nombre completo</label>
+          <input type="text" [(ngModel)]="formData.nombre" name="nombre" placeholder="Tu nombre y apellido" required />
+        </div>
+        <div class="form-group">
+          <label>Teléfono</label>
+          <input type="tel" [(ngModel)]="formData.telefono" name="telefono" placeholder="5918-5697" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Correo electrónico</label>
+          <input type="email" [(ngModel)]="formData.email" name="email" placeholder="tucorreo@ejemplo.com" required />
+        </div>
+        <div class="form-group">
+          <label>Tipo de terapia</label>
+          <select [(ngModel)]="formData.terapia" name="terapia">
+            <option value="Terapia Física">Terapia Física</option>
+            <option value="Terapia Ocupacional">Terapia Ocupacional</option>
+            <option value="Rehabilitación Deportiva">Rehabilitación Deportiva</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Fecha preferida</label>
+          <input type="date" [(ngModel)]="formData.fecha" name="fecha" />
+        </div>
+        <div class="form-group">
+          <label>Hora preferida</label>
+          <input type="time" [(ngModel)]="formData.hora" name="hora" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Cuéntanos brevemente tu caso o molestia</label>
+        <textarea rows="4" [(ngModel)]="formData.caso" name="caso" placeholder="Opcional: describe tu lesión, dolor o el motivo de tu consulta."></textarea>
+      </div>
+
+      <div class="form-footer">
+        <button type="submit" class="btn btn-primary">Solicitar cita</button>
+        <span class="privacy-note">Tus datos solo se usan para coordinar tu cita.</span>
+      </div>
+    </form>
+  </div>
+</div>

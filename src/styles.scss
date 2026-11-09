@@ -1,0 +1,113 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+  --bg-main: #f6f7f2;
+  --bg-card: #ffffff;
+  --bg-badge: #e5ece0;
+  --primary-green: #90a583;
+  --primary-dark: #6b7f5e;
+  --whatsapp-green: #497956;
+  --text-dark: #222923;
+  --text-muted: #646b62;
+  --border-color: #e3e7dd;
+  
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  --radius-card: 24px;
+  --radius-arch: 180px 180px 32px 32px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.section-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.subtitle-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+
+  .line {
+    width: 24px;
+    height: 1px;
+    background-color: var(--text-muted);
+  }
+
+  .text {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+}
+
+.heading-display {
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  line-height: 1.18;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+
+  &.btn-primary {
+    background-color: var(--primary-green);
+    color: #ffffff;
+    &:hover {
+      background-color: var(--primary-dark);
+    }
+  }
+
+  &.btn-outline {
+    background-color: #ffffff;
+    border-color: var(--border-color);
+    color: var(--text-dark);
+    &:hover {
+      background-color: var(--bg-badge);
+    }
+  }
+
+  &.btn-whatsapp {
+    background-color: var(--whatsapp-green);
+    color: #ffffff;
+    &:hover {
+      opacity: 0.92;
+    }
+  }
+}
